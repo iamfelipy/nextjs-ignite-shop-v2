@@ -7,13 +7,18 @@ https://efficient-sloth-d85.notion.site/Desafio-04-Adicionando-features-ao-Ignit
 
 ## Tecnologias
 
-- **Next.js**: Framework React para criação de aplicações web.
-- **React**: Biblioteca para construção de interfaces de usuário.
-- **Stripe**: API para processamento de pagamentos.
-- **Axios**: Cliente HTTP para fazer requisições à API.
-- **Keen Slider**: Biblioteca para criar sliders/carrosséis.
-- **@phosphor-icons/react**: Conjunto de ícones para React.
-- **@stitches/react**: Biblioteca de CSS-in-JS para estilização.
+- **Next.js** – Framework React para SSR e SSG
+- **React** – Biblioteca para construção de interfaces
+- **React DOM** – Renderização de componentes React na DOM
+- **TypeScript** – Tipagem estática para JavaScript
+- **Stripe** – API de pagamentos integrada via checkout
+- **use-shopping-cart** – Gerenciamento de carrinho com suporte à Stripe
+- **Axios** – Cliente HTTP para comunicação com API
+- **Keen Slider** – Carrossel de produtos com navegação fluida
+- **@phosphor-icons/react** – Biblioteca de ícones moderna
+- **@stitches/react** – CSS-in-JS para estilização modular
+- **ESLint** – Ferramenta de linting para manter a qualidade do código
+- **Prettier** – Formatação de código padronizada
 
 ## Instalação
 
@@ -38,25 +43,6 @@ https://efficient-sloth-d85.notion.site/Desafio-04-Adicionando-features-ao-Ignit
 - **`npm run build`**: Gera a versão de produção.
 - **`npm run start`**: Inicia a aplicação em produção.
 - **`npm run lint`**: Executa o linting do código.
-
-## Dependências
-
-- `@phosphor-icons/react`: Ícones para componentes React.
-- `@stitches/react`: Estilização com CSS-in-JS.
-- `axios`: Requisições HTTP.
-- `keen-slider`: Carrosséis.
-- `next`: Framework para renderização do lado do servidor.
-- `react`, `react-dom`: Bibliotecas principais do React.
-- `stripe`: API para pagamentos.
-- `use-shopping-cart`: Gerenciamento do carrinho de compras.
-
-## Dependências de Desenvolvimento
-
-- `@types/node`: Tipos para o Node.js.
-- `@types/react`: Tipos para o React.
-- `eslint`: Ferramenta de linting para o código.
-- `eslint-config-next`: Configuração padrão do ESLint para Next.js.
-- `typescript`: Suporte ao TypeScript.
 
 ## Como Contribuir
 
