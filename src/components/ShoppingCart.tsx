@@ -22,16 +22,18 @@ export function ShoppingCart() {
       try {
         setIsCreatingCheckoutSession(true)
         const response = await axios.post('/api/checkout', {
-          items: Object.values(cartDetails),
+          items: Object.values(cartDetails ?? {}),
         })
   
         const {checkoutUrl} = response.data
   
-        window.location.href = checkoutUrl
+        if (typeof window !== 'undefined') {
+          window.location.href = checkoutUrl
+        }
       } catch (err) {
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
-  
+        console.log(err)
         alert('Falha ao redirecionar ao checkout!')
       }
     }
