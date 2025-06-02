@@ -2,10 +2,19 @@
 
 Ignite Shop é uma loja de camisetas online construída com Next.js. O projeto utiliza diversos pacotes para otimizar a experiência de compra, incluindo integração com pagamentos via Stripe e um sistema de carrinho de compras com `use-shopping-cart`.
 
+# Deploy vercel
+https://nextjs-ignite-shop-v2.vercel.app
+
 ## 📸 Preview
 
 ![Preview 1](./preview-1.png)  
 ![Preview 2](./preview-2.png)
+
+# Figma
+https://www.figma.com/design/kyJrCG3iCHlGFb6HD3Wnlj/Ignite-Shop-2.0-%E2%80%A2-Desafio-React--Copy-?node-id=0-1&p=f&t=tQfY7UxTCDrH33td-0
+
+## 📦 Repositorio Original
+https://github.com/iamfelipy/2024-rocketseat-reactjs/tree/main/5-primeiro-framework/projeto-do-modulo-ignite-shop
 
 ## 🧠 Desafio
 
