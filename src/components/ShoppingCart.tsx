@@ -33,7 +33,7 @@ export function ShoppingCart() {
       } catch (err) {
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
-        console.log(err)
+        console.log(JSON.stringify(err))
         alert('Falha ao redirecionar ao checkout!')
       }
     }
