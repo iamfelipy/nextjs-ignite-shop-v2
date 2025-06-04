@@ -12,6 +12,8 @@ interface BodyRequest {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { items } = req.body as BodyRequest;
 
+  return res.status(200).json({ req: req, key1: process.env.NEXT_PUBLIC_URL, key2: process.env.NEXT_PUBLIC_URL });
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed.' });
   }
@@ -19,6 +21,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (items?.length <= 0) {
     return res.status(400).json({ error: 'Cart is empty.' });
   }
+
+  
 
   // Mapear os itens para a estrutura de line_items que a Stripe espera
   const lineItems = await Promise.all(
