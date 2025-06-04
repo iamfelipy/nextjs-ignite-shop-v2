@@ -30,12 +30,10 @@ export default function Product({product}: ProductProps) {
       })
 
       const {checkoutUrl} = response.data
-      console.log("response.data")
-      console.log(response.data)
-      // window.location.href = checkoutUrl
+
+      window.location.href = checkoutUrl
     } catch (err) {
       // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
-      console.log("err")
       console.log(err)
       setIsCreatingCheckoutSession(false)
 
