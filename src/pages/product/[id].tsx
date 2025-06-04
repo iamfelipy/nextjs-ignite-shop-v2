@@ -65,12 +65,6 @@ export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}
   const product = await stripe.products.retrieve(productId, {
     expand: ['default_price']
   })
-
-  if (!product) {
-    return {
-      notFound: true,
-    }
-  }
   
   const price = product.default_price as Stripe.Price
 
