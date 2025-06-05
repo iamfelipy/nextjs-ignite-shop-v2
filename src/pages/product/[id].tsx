@@ -23,35 +23,35 @@ export default function Product({product}: ProductProps) {
 
   return <>{JSON.stringify(product)}</>
 
-  return (
-    <>
-      <Head>
-        <title>{product.name} | Ignite Shop</title>
-      </Head>
-      <ProductContainer>
-        <ImageContainer>
-          <Image src={product.imageUrl} width={520} height={480} alt="" />
-        </ImageContainer>
-        <ProductDetails>
-          <h1>{product.name}</h1>
-          <span>
-          {
-            new Intl.NumberFormat('pt-BR', {
-              style: 'currency',
-              currency: 'BRL'
-              }).format(product.price / 100)
-          }
-          </span>
-          <p>
-            {product.description}
-          </p>
-          <button onClick={() => addItem(product)}>
-            Colocar na sacola
-          </button>
-        </ProductDetails>
-      </ProductContainer>
-    </>
-  )
+  // return (
+  //   <>
+  //     <Head>
+  //       <title>{product.name} | Ignite Shop</title>
+  //     </Head>
+  //     <ProductContainer>
+  //       <ImageContainer>
+  //         <Image src={product.imageUrl} width={520} height={480} alt="" />
+  //       </ImageContainer>
+  //       <ProductDetails>
+  //         <h1>{product.name}</h1>
+  //         <span>
+  //         {
+  //           new Intl.NumberFormat('pt-BR', {
+  //             style: 'currency',
+  //             currency: 'BRL'
+  //             }).format(product.price / 100)
+  //         }
+  //         </span>
+  //         <p>
+  //           {product.description}
+  //         </p>
+  //         <button onClick={() => addItem(product)}>
+  //           Colocar na sacola
+  //         </button>
+  //       </ProductDetails>
+  //     </ProductContainer>
+  //   </>
+  // )
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
