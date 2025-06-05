@@ -24,10 +24,10 @@ export function ShoppingCart() {
         const response = await axios.post('/api/checkout', {
           items: Object.values(cartDetails),
         })
+        console.log(response.data)
+        // const {checkoutUrl} = response.data
   
-        const {checkoutUrl} = response.data
-  
-        window.location.href = checkoutUrl
+        // window.location.href = checkoutUrl
       } catch (err) {
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
