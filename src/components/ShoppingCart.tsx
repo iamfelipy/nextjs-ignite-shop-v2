@@ -29,6 +29,7 @@ export function ShoppingCart() {
   
         // window.location.href = checkoutUrl
       } catch (err) {
+        console.log(err)
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
   
