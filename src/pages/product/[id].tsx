@@ -21,6 +21,8 @@ interface ProductProps {
 export default function Product({product}: ProductProps) {
   const { addItem } = useShoppingCart()
 
+  return <>{JSON.stringify(product)}</>
+
   return (
     <>
       <Head>
@@ -70,14 +72,18 @@ export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}
   return {
     props: {
       product: {
-        id: product.id,
-        name: product.name,
-        imageUrl: product.images[0],
-        description :product.description,
-        defaultPriceId: price.id,
-        price: price.unit_amount,
-        currency: price.currency,
+        teste: product,
+        teste1: 2
       }
+      // product: {
+      //   id: product.id,
+      //   name: product.name,
+      //   imageUrl: product.images[0],
+      //   description :product.description,
+      //   defaultPriceId: price.id,
+      //   price: price.unit_amount,
+      //   currency: price.currency,
+      // }
     },
     revalidate: 60 * 60 * 1 // 1hour
   }
