@@ -10,9 +10,12 @@ interface BodyRequest {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { items } = req.body as BodyRequest;
+  
+  return res.status(200).json({ method: req?.method, body: req?.body,error: 'deu tudo certo'})
+  // return res.status(200).json({ method: req?.method, body: req?.body,error: 'deu tudo certo', successUrl, cancelUrl})
 
-  return res.status(200).json({ req: req, key1: process.env.NEXT_PUBLIC_URL, key2: process.env.NEXT_PUBLIC_URL });
+
+  const { items } = req.body as BodyRequest;
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed.' });
