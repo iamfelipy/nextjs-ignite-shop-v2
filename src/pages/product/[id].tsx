@@ -21,7 +21,7 @@ interface ProductProps {
 export default function Product({product}: ProductProps) {
   // const { addItem } = useShoppingCart()
 
-  return <>{JSON.stringify(product)}</>
+  return <>{JSON.stringify('product')}</>
 
   // return (
   //   <>
@@ -62,8 +62,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}) => {
-  const productId = params.id
-  console.log('params:', params)
+  // const productId = params.id
+  // console.log('params:', params)
 
   // const product = await stripe.products.retrieve(productId, {
   //   expand: ['default_price']
@@ -85,6 +85,6 @@ export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}
       //   currency: price.currency,
       // }
     },
-    revalidate: 60 * 60 * 1 // 1hour
+    revalidate: 1 // 1hour
   }
 }
