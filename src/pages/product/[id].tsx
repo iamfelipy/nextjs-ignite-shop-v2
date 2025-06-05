@@ -19,7 +19,7 @@ interface ProductProps {
 }
 
 export default function Product({product}: ProductProps) {
-  const { addItem } = useShoppingCart()
+  // const { addItem } = useShoppingCart()
 
   return <>{JSON.stringify(product)}</>
 
