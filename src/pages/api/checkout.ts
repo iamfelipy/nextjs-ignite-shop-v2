@@ -11,15 +11,16 @@ interface BodyRequest {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   
-  return res.status(200).json({ method: req?.method, body: req?.body,error: 'deu tudo certo'})
+  return res.status(200).json({ method: req?.method, body: req?.body,error: process.env.NEXT_PUBLIC_URL})
   // return res.status(200).json({ method: req?.method, body: req?.body,error: 'deu tudo certo', successUrl, cancelUrl})
 
 
-  const { items } = req.body as BodyRequest;
-
+  
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed.' });
   }
+
+  const { items } = req.body as BodyRequest;
 
   if (items?.length <= 0) {
     return res.status(400).json({ error: 'Cart is empty.' });
