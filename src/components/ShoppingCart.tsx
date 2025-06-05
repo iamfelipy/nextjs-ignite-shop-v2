@@ -21,6 +21,10 @@ export function ShoppingCart() {
     async function handleBuyProducts() {
       try {
         setIsCreatingCheckoutSession(true)
+        console.log("cartDetails")
+        console.log(cartDetails)
+        console.log("Object.values(cartDetails)")
+        console.log(Object.values(cartDetails))
         const response = await axios.post('/api/checkout', {
           items: Object.values(cartDetails),
         })
@@ -29,6 +33,7 @@ export function ShoppingCart() {
   
         // window.location.href = checkoutUrl
       } catch (err) {
+        console.log("err")
         console.log(err)
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
