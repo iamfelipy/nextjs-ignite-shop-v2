@@ -11,7 +11,7 @@ interface BodyRequest {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   
-  return res.status(200).json({ method: req?.method, body: req?.body,error: process?.env?.NEXT_PUBLIC_URL, env: process?.env})
+  return res.status(200).json({ method: req?.method, body: req?.body})
   // return res.status(200).json({ method: req?.method, body: req?.body,error: 'deu tudo certo', successUrl, cancelUrl})
 
 
