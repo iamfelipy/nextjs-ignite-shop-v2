@@ -3,7 +3,7 @@ import Image from 'next/future/image'
 import {useKeenSlider} from 'keen-slider/react'
 
 import { HomeContainer, Product } from '../styles/pages/home'
-import { Handbag } from "@phosphor-icons/react/dist/ssr"
+import { Handbag } from "@phosphor-icons/react"
 import { useShoppingCart } from "use-shopping-cart"
 
 import 'keen-slider/keen-slider.min.css'
