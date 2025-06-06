@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import { formatCurrencyString, useShoppingCart } from "use-shopping-cart"
 import { CartContainer, CartFooter, CartHeader, CartItem, CartItemList } from "../styles/components/shopping-cart"
-import { X } from "@phosphor-icons/react"
+// import { X } from "@phosphor-icons/react"
 import Image from "next/image"
 import axios from "axios"
 
@@ -41,7 +41,8 @@ export function ShoppingCart() {
       <CartHeader>
         <div>
           <button onClick={handleCloseCart}>
-            <X  size="1.5rem" weight="bold"  />
+            X
+            {/* <X  size="1.5rem" weight="bold"  /> */}
           </button>
         </div>
         <h2>Sacola de compras</h2>

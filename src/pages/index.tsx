@@ -3,7 +3,7 @@ import Image from 'next/future/image'
 import {useKeenSlider} from 'keen-slider/react'
 
 import { HomeContainer, Product } from '../styles/pages/home'
-import { Handbag } from "@phosphor-icons/react"
+// import { Handbag } from "@phosphor-icons/react"
 import { useShoppingCart } from "use-shopping-cart"
 
 import 'keen-slider/keen-slider.min.css'
@@ -67,7 +67,8 @@ export default function Home({products}: HomeProps) {
                       e.preventDefault(); 
                       addToCart(product); 
                     }}>
-                      <Handbag size="2rem" weight="bold" />
+                      X
+                      {/* <Handbag size="2rem" weight="bold" /> */}
                     </button>
                   </footer>
                 </Product>
