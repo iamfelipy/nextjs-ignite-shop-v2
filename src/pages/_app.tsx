@@ -18,9 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
       // Connects to our Stripe account (stored in an .env.local file)
       stripe={process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY}
       // Redirected here after successful payments (url stored in .env.local file)
-      successUrl={`${process.env.NEXT_PUBLIC_URL}/success`}
+      successUrl={`${process.env.NEXT_PUBLIC_NEXT_URL}/success`}
       // Redirected here when you click back on Stripe Checkout (url stored in .env.local file)
-      cancelUrl={`${process.env.NEXT_PUBLIC_URL}/`}
+      cancelUrl={`${process.env.NEXT_PUBLIC_NEXT_URL}/`}
       currency="BRL"
       // Only customers from UK will be able to purchase
       // Having this setting means that we will capture shipping address
