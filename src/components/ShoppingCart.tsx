@@ -26,8 +26,7 @@ export function ShoppingCart() {
         })
   
         const {checkoutUrl} = response.data
-        console.log(response.data)
-        // window.location.href = checkoutUrl
+        window.location.href = checkoutUrl
       } catch (err) {
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
         setIsCreatingCheckoutSession(false)
