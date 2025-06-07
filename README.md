@@ -20,7 +20,7 @@ https://www.figma.com/design/kyJrCG3iCHlGFb6HD3Wnlj/Ignite-Shop-2.0-%E2%80%A2-De
 - **Stripe** – API para processamento de pagamentos online.
 - **use-shopping-cart** – Gerenciamento de carrinho de compras com Stripe.
 - **Keen Slider** – Biblioteca para criação de carrosséis/sliders.
-- **@phosphor-icons/react** – Conjunto de ícones leves e personalizáveis.
+- **phosphor-react** – Conjunto de ícones leves e personalizáveis.
 - **@stitches/react** – Solução de CSS-in-JS para estilização rápida.
 - **Axios** – Cliente HTTP para chamadas à API.
 - **ESLint** – Linter para padronização e correção de código.

@@ -27,9 +27,9 @@ export default function Success({ customerName, product }: SuccessProps) {
 
         {/* <ImageContainer>
           <Image src={product.imageUrl} width={120} height={110} alt="" />
-        </ImageContainer> */}
+        </ImageContainer>
 
-        {/* <p>
+        <p>
           Uhuul <strong>{customerName}</strong>, sua <strong>{product.name}</strong> já está a caminho da sua casa. 
         </p> */}
 

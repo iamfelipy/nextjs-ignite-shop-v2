@@ -26,6 +26,7 @@ export function ShoppingCart() {
         })
   
         const {checkoutUrl} = response.data
+  
         window.location.href = checkoutUrl
       } catch (err) {
         // Conectar com um ferramenta de observabilidade (Datadog / Sentry)
